@@ -1,29 +1,39 @@
 package com.example.databingding
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
+import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.databingding.beans.User
 import com.example.databingding.databinding.ActivityMainBinding
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    private val mHandler = Handler()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val mHandler = Handler()
-
+        val decorView: ViewGroup = window.decorView as ViewGroup
+        binding = DataBindingUtil.inflate(layoutInflater,R.layout.activity_main,decorView,true)
         // 绑定
-        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+       // binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        // 初始值
         binding.user = User("SunnyDay")
 
-        // 5min 后更新下内容。
+        updateTextByTargetSecondLater(5 * 1000)
+    }
+
+    /**
+     * second秒后更新下内容。
+     * */
+    private fun updateTextByTargetSecondLater(second: Long) {
         thread {
-            Thread.sleep(5*1000)
+            Thread.sleep(second)
             mHandler.post {
                 binding.user = User("Tom")
             }
         }
-
     }
 }

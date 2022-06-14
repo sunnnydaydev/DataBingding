@@ -2,10 +2,23 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+        <!--系统类要使用import方式导包，否则下面xml控件无法使用表达式如View.Gone 无法调用-->
+        <import type="android.view.View" />
+
+        <!-- 小于号< 需要转义为 &lt; 语法要求 直接写 List<String> 是语法错误的。-->
+        <import type="java.util.List"/>
+        <variable name="list" type="List&lt;String>"/>
+
+        <import type="java.util.Map"/>
+        <variable name="map" type="Map&lt;String, String>"/>
 
         <variable
             name="user"
             type="com.example.databingding.beans.User" />
+
+        <variable
+            name="index"
+            type="Integer" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,6 +37,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(index+1)}"
+            android:textSize="15sp"
+            android:visibility="@{index > 2 ? View.GONE:View.VISIBLE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTextView" />
+
+        <TextView
+            android:id="@+id/mTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{map.name}"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTextView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
