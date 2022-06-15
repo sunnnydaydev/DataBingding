@@ -17,11 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val decorView: ViewGroup = window.decorView as ViewGroup
         binding = DataBindingUtil.inflate(layoutInflater,R.layout.activity_main,decorView,true)
-        // 绑定
-       // binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        // 初始值
-        binding.user = User("SunnyDay")
+        // binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.user = User("SunnyDay")
         updateTextByTargetSecondLater(5 * 1000)
     }
 
