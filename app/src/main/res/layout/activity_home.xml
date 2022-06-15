@@ -14,4 +14,11 @@
         android:layout_height="wrap_content"
         android:text="[]运算符"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/stringAndResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="字符串和Resource的使用"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

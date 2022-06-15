@@ -13,5 +13,10 @@ class HomeActivity : AppCompatActivity() {
         middleBlankOp.setOnClickListener {
             startActivity(Intent(this,MiddleBlankActivity::class.java))
         }
+
+        stringAndResource.setOnClickListener {
+            startActivity(Intent(this,StringActivity::class.java))
+        }
+
     }
 }
