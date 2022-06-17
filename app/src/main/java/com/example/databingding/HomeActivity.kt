@@ -23,6 +23,10 @@ class HomeActivity : AppCompatActivity() {
 //            startActivity(Intent(this,EventActivity::class.java))
 //        }
 
+        observable.setOnClickListener {
+            startActivity(Intent(this,ObservableFieldActivity::class.java))
+        }
+
     }
 
     fun openEvent(view: View) {
