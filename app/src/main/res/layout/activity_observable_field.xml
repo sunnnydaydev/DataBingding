@@ -4,8 +4,12 @@
     <data>
 
         <variable
-            name="handler"
-            type="com.example.databingding.others.MyHandler" />
+            name="student"
+            type="com.example.databingding.beans.Student" />
+
+        <variable
+            name="activity"
+            type="com.example.databingding.ObservableFieldActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,24 +17,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-        <!--方法的引用-->
-        <androidx.appcompat.widget.AppCompatTextView
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mTextView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{handler::onClickFriend}"
-            android:text="方法引用"
+            android:onClick="@{activity.changeText}"
+            android:text="改变文字"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <!--监听器绑定 -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn"
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mTextName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="监听器绑定"
-            android:onClick='@{(v)-> handler.saveTask("task1")}'
+            android:text="@{student.stuName}"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
