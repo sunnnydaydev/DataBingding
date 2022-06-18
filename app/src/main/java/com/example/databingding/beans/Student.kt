@@ -2,6 +2,8 @@ package com.example.databingding.beans
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
+import androidx.databinding.ObservableField
+import androidx.databinding.ObservableInt
 import com.example.databingding.BR
 
 
@@ -12,6 +14,8 @@ class Student(): BaseObservable(){
         field = value
         notifyPropertyChanged(BR.stuName)
     }
+    //ObservableField 可替换基本数据类型字段.
+    val age: ObservableField<Int> = ObservableField()
 }
 //1、若不引入kapt插件，引入BaseObservable后编译报错。无法生成自定义类的BR字段。Unresolved reference: BR
 

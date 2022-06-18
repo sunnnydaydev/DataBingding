@@ -28,16 +28,40 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+<!-- 改变年龄-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity.changeAge}"
+            android:text="改变年龄"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTextView1" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/mTextName"
+            android:id="@id/mTextView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{student.stuName}"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mTextView1" />
+            app:layout_constraintTop_toBottomOf="@id/mTextView2" />
+<!-- 显示年龄
+
+这里不要直接text= "@{student.age}"  int 类型数最好通过String转下，否则编译报错。
+-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(student.age)}"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mTextView3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 

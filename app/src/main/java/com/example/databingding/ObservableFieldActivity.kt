@@ -14,6 +14,7 @@ class ObservableFieldActivity : AppCompatActivity() {
     }
     private val stu1 = Student().apply {
         stuName = "SunnyDay"
+        age.set(18)
     }
     private val stu2 = Student().apply {
         stuName = "Tom"
@@ -35,5 +36,10 @@ class ObservableFieldActivity : AppCompatActivity() {
     fun changeText(view: View) {
         stu1.stuName = "Kate"  // 不起作用
        // binding.student = stu2
+    }
+
+//    修改年龄
+    fun changeAge(view: View){
+        stu1.age.set(20)
     }
 }
