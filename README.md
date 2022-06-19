@@ -4,6 +4,6 @@
 
 [2、数据可观察](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%82%E5%AF%9F.md)
 
-[3、生成的绑定类](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/生成的绑定类.md)
+[3、绑定适配器](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/绑定适配器.md)
 
 [官方文档](https://developer.android.google.cn/topic/libraries/data-binding)
