@@ -27,6 +27,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,ObservableFieldActivity::class.java))
         }
 
+        eachOther.setOnClickListener {
+            startActivity(Intent(this,EachOtherActivity::class.java))
+        }
+
     }
 
     fun openEvent(view: View) {
