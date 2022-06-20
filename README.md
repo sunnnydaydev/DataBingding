@@ -8,16 +8,8 @@
 
 [4、双向绑定](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/双向绑定.md)
 
-[5、DataBinDing结合RecyclerView练习](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/DataBinDing结合RecyclerView练习.md)
+[5、练习](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/练习.md)
 
-DataBinding 与RecyclerView结合
-
-ToDo 
-
-绑定适配器：这一块需要补充下。
-
-绑定到架构组件：这一块需要结合架构组件多多练习。
-
-双向绑定：自定义那块需要补充
+[总结](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/总结.md)
 
 [官方文档](https://developer.android.google.cn/topic/libraries/data-binding)
