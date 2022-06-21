@@ -50,4 +50,18 @@
         android:layout_height="wrap_content"
         android:text="LiveData"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/recyclerViewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recyclerViewActivity"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/fragmentActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragmentActivity"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

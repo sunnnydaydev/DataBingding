@@ -18,10 +18,6 @@ class HomeActivity : AppCompatActivity() {
         stringAndResource.setOnClickListener {
             startActivity(Intent(this,StringActivity::class.java))
         }
-//
-//        event.setOnClickListener {
-//            startActivity(Intent(this,EventActivity::class.java))
-//        }
 
         observable.setOnClickListener {
             startActivity(Intent(this,ObservableFieldActivity::class.java))
@@ -32,6 +28,14 @@ class HomeActivity : AppCompatActivity() {
         }
         liveData.setOnClickListener {
             startActivity(Intent(this,LiveDataActivity::class.java))
+        }
+
+        recyclerViewActivity.setOnClickListener {
+            startActivity(Intent(this,RecyclerViewActivity::class.java))
+        }
+
+        fragmentActivity.setOnClickListener {
+            startActivity(Intent(this,FragmentActivity::class.java))
         }
 
     }

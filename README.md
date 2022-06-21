@@ -6,10 +6,12 @@
 
 [3、将布局绑定到架构组件](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/将布局绑定到架构组件.md)
 
-[4、双向绑定](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/双向绑定.md)
+[4、绑定适配器](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/绑定适配器.md)
 
-[5、练习](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/练习.md)
+[5、双向绑定](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/双向绑定.md)
 
-[总结](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/总结.md)
+[6、练习](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/练习.md)
+
+[7、总结](https://github.com/sunnnydaydev/DataBingding/blob/main/mds/总结.md)
 
 [官方文档](https://developer.android.google.cn/topic/libraries/data-binding)
