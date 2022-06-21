@@ -30,6 +30,9 @@ class HomeActivity : AppCompatActivity() {
         eachOther.setOnClickListener {
             startActivity(Intent(this,EachOtherActivity::class.java))
         }
+        liveData.setOnClickListener {
+            startActivity(Intent(this,LiveDataActivity::class.java))
+        }
 
     }
 

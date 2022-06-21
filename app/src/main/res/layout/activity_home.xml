@@ -43,4 +43,11 @@
         android:layout_height="wrap_content"
         android:text="双向绑定"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/liveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiveData"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
