@@ -64,4 +64,11 @@
         android:layout_height="wrap_content"
         android:text="fragmentActivity"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:id="@+id/bindAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AdapterActivity"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

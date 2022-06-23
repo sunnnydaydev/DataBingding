@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+       <variable
+           name="listener"
+           type="com.example.databingding.others.MyOnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!-- 把listener 设置给他就行，因为View 本身onClickListener接受的参数就是listener-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn"
+            android:text="按钮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClickListener="@{listener}"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</layout>

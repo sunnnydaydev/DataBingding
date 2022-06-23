@@ -38,6 +38,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,FragmentActivity::class.java))
         }
 
+        bindAdapter.setOnClickListener {
+            startActivity(Intent(this,AdapterActivity::class.java))
+        }
+
     }
 
     fun openEvent(view: View) {
