@@ -23,5 +23,12 @@
             android:onClickListener="@{listener}"
             tools:ignore="HardcodedText" />
 
+        <com.example.databingding.view.MyTextView
+            android:id="@+id/btn2"
+            android:text="按钮2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"
+            app:log='@{"SunnyDay"}'/>
     </LinearLayout>
 </layout>
