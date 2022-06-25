@@ -14,10 +14,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
+<!--        注意这里使用了vpn，否则url访问失败-->
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:imgUrl='@{"https://raw.githubusercontent.com/sunnnydaydev/DataBingding/main/photo/glide_test.png"}'
+            app:errorImage="@{@drawable/error_img}"/>
 
         <!-- 把listener 设置给他就行，因为View 本身onClickListener接受的参数就是listener-->
         <androidx.appcompat.widget.AppCompatTextView

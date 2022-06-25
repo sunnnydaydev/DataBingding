@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.databinding.BindingMethod
 import androidx.databinding.BindingMethods
 import androidx.databinding.DataBindingUtil
+import com.bumptech.glide.Glide
 import com.example.databingding.databinding.ActivityAdapterBinding
 import com.example.databingding.generated.callback.OnClickListener
 import com.example.databingding.others.MyOnClickListener
