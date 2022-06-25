@@ -31,10 +31,11 @@
             tools:ignore="HardcodedText"
             app:log='@{"SunnyDay"}'/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/test"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test"/>
+            android:hint='@{"hahahah"}'
+            app:price='@{"emmmm"}'/>
     </LinearLayout>
 </layout>
