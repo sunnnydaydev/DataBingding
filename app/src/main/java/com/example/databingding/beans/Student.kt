@@ -3,9 +3,7 @@ package com.example.databingding.beans
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.ObservableField
-import androidx.databinding.ObservableInt
 import com.example.databingding.BR
-
 
 class Student(): BaseObservable(){
     @get:Bindable
